@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Survival</title>
+    <link rel="icon" href="./icon/icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./map.css">
+    <script src="jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <script>
+        $(document).ready(function () {
+            $(".download").mouseover(function () {
+                $(".dlcontent").show();
+            });
+            $(".dlcontent").mouseover(function () {
+                $(".dlcontent").show();
+            });
+            $(".download").mouseout(function () {
+                $(".dlcontent").hide();
+            });
+            $(".dlcontent").mouseout(function () {
+                $(".dlcontent").hide();
+            });
+
+            //角色圖
+            $(function () {
+                $(".sv_button img").addClass("filtercss");
+                $(".sv_intro").hide();
+                $(".on").show();
+                $(".on img").removeClass("filtercss");
+
+                $(".sv_button").click(function () {
+                    $(".sv_button img").addClass("filtercss");
+                    $(".sv_intro").hide();
+                    $(".sv_intro").find("img").addClass();
+                    $(this).next().fadeIn(500);
+                    $(".sv_text").show();
+                    $(this).find("img").removeClass("filtercss");
+                })
+            })
+            //特色圖
+            $(function () {
+                $(".pic_button>img").addClass("opacitycss");
+                $(".on>img").removeClass("opacitycss");
+                $(".pic_feature").hide();
+                $(".on").show();
+
+                $(".pic_button").click(function () {
+                    $(".pic_button img").addClass("opacitycss")
+                    $(".pic_feature").hide();
+                    $(".pic_feature").find("img").addClass();
+                    $(this).next().slideDown(400);
+                    $(this).find("img").removeClass("opacitycss");
+                })
+            })
+
+            //
+            $('.up .close').click(function () {
+                $('.up').hide();
+            });
+
+            //影片
+            $('#mList a').on('click', function (e) {
+
+                e.preventDefault();
+
+                // get video url
+                var u = $(this).attr('href');
+                // get video id
+                var i = u.substring(u.search('=') + 1, u.length);
+
+                // build player
+                $('#mPlayer DIV').html('<iframe width="840" height="472" src="https://www.youtube.com/embed/WYs4RuqgIKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+                // '<iframe width="840" height="472" src="https://www.youtube.com/embed/' + i + '?rel=0&autoplay=1;controls=1&showinfo=0 frameborder="1" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+               
+                // display player
+                $('#mPlayer').fadeIn(500);
+
+            });
+
+            // hide video player
+            $('#mPlayer').on('click', function (e) {
+
+                // hide player
+                $('#mPlayer').fadeOut(500);
+
+                // destroy player
+                $('#mPlayer DIV').empty();
+
+            });
+
+            //地圖
+            $(".bg_modal1").hide();
+            $(".map1>img").click(function () {
+                $(".bg_modal1").show();
+            });
+            $(".close").click(function () {
+                $(".bg_modal1").hide();
+            });
+
+            $(".bg_modal2").hide();
+            $(".map2>img").click(function () {
+                $(".bg_modal2").show();
+            });
+            $(".close").click(function () {
+                $(".bg_modal2").hide();
+            });
+            $(".bg_modal3").hide();
+            $(".map3>img").click(function () {
+                $(".bg_modal3").show();
+            });
+            $(".close").click(function () {
+                $(".bg_modal3").hide();
+            });
+            $(".bg_modal4").hide();
+            $(".map4>img").click(function () {
+                $(".bg_modal4").show();
+            });
+            $(".close").click(function () {
+                $(".bg_modal4").hide();
+            });
+            $(".bg_modal5").hide();
+            $(".map5>img").click(function () {
+                $(".bg_modal5").show();
+            });
+            $(".close").click(function () {
+                $(".bg_modal5").hide();
+            });
+            $(".bg_modal6").hide();
+            $(".map6>img").click(function () {
+                $(".bg_modal6").show();
+            });
+            $(".close").click(function () {
+                $(".bg_modal6").hide();
+            });
+            $(".bg_modal7").hide();
+            $(".map7>img").click(function () {
+                $(".bg_modal7").show();
+            });
+            $(".close").click(function () {
+                $(".bg_modal7").hide();
+            });
+            $(".bg_modal8").hide();
+            $(".map8>img").click(function () {
+                $(".bg_modal8").show();
+            });
+            $(".close").click(function () {
+                $(".bg_modal8").hide();
+            });
+            $(".bg_modal9").hide();
+            $(".map9>img").click(function () {
+                $(".bg_modal9").show();
+            });
+            $(".close").click(function () {
+                $(".bg_modal9").hide();
+            });
+            $(".bg_modal10").hide();
+            $(".map10>img").click(function () {
+                $(".bg_modal10").show();
+            });
+            $(".close").click(function () {
+                $(".bg_modal10").hide();
+            });
+            $(".bg_modal11").hide();
+            $(".map11>img").click(function () {
+                $(".bg_modal11").show();
+            });
+            $(".close").click(function () {
+                $(".bg_modal11").hide();
+            });
+            $(".bg_modal12").hide();
+            $(".map12>img").click(function () {
+                $(".bg_modal12").show();
+            });
+            $(".close").click(function () {
+                $(".bg_modal12").hide();
+            });
+        })
+    </script>
+
+    <div class="header_bg" id="section_header">
+        <!-- 製作正上方的背景圖 -->
+        <a class="bs_icon" href="#"></a> <!-- 製作左上角的圖標 -->
+        <div class="header_nav">
+            <!-- 製作右上角的連結icon -->
+            <a class="b1"
+                href="https://www.facebook.com/%E9%BB%91%E8%89%B2%E5%80%96%E5%AD%98-Black-Survival-%E9%9D%9E%E5%AE%98%E7%B9%81%E4%B8%AD%E8%B3%87%E8%A8%8A%E7%AB%99-111586213933327/"
+                target="_blank"></a></a>
+            <a class="b2" href="https://www.youtube.com/channel/UCaktoGSdjMnfQFv5BSyYrvA" target="_blank"></a>
+            <a class="b3" href="https://forum.gamer.com.tw/A.php?bsn=38217" target="_blank"></a>
+            <a class="b4" href="https://blacksurvivaltw.fandom.com/zh/wiki/%E9%BB%91%E8%89%B2%E5%80%96%E5%AD%98_Wiki"
+                target="_blank"></a>
+        </div>
+
+        <div class="home">
+            <!-- 播放影片-->
+            <!-- <div class="playVideo">
+                <i></i>
+            </div>
+            <div class="modal is-hide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/p77piNdlYw0?controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <a class="modal-close js-modal-close">X</a>
+            </div> -->
+            <div id="mList">
+                <a href="https://www.youtube.com/watch?v=j1V93r6uO54" class="playVideo"><i></i></a>
+            </div>            
+
+            <div class="download"></div> <!-- 移過去顯示隱藏的下載圖標-->
+            <div class="dlcontent">
+                <!-- 下載圖標-->
+                <a class="d1" href="https://play.google.com/store/apps/details?id=com.boltrend.blacksurvival"
+                    target="_blank"></a>
+                <a class="d2" href="https://apps.apple.com/us/app/black-survival-re/id1526806298" target="_blank"></a>
+                <a class="d3" href="https://store.steampowered.com/app/690510/Black_Survival/" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+    <!-- 遊戲特色-->
+    <div class="pic_bg" id="section_pic">
+        <div class="pic">
+            <!-- 大袋子 -->
+            <div class="pic_title"></div>
+            <div class="game_pic">
+                <div class="pic_content">
+                    <div class="pic_nav" style="z-index: 20;">
+                        <div class="pic_button on">
+                            <img src="./other/scroll_on.png" alt="">
+                        </div>
+                        <div class="pic_feature on">
+                            <img src="./pic/1.jpg" alt="">
+                        </div>
+                        <div class="pic_button">
+                            <img src="./other/scroll_on.png" alt="">
+                        </div>
+                        <div class="pic_feature">
+                            <img src="./pic/3.jpg" alt="">
+                        </div>
+                        <div class="pic_button">
+                            <img src="./other/scroll_on.png" alt="">
+                        </div>
+                        <div class="pic_feature">
+                            <img src="./pic/5.jpg" alt="">
+                        </div>
+                        <div class="pic_button">
+                            <img src="./other/scroll_on.png" alt="">
+                        </div>
+                        <div class="pic_feature">
+                            <img src="./pic/4.jpg" alt="">
+                        </div>
+                        <div class="pic_button">
+                            <img src="./other/scroll_on.png" alt="">
+                        </div>
+                        <div class="pic_feature">
+                            <img src="./pic/kv.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="photo_border"></div>
+            <div class="scroll_line"></div>
+        </div>
+    </div>
+
+
+    <!-- 腳色介紹-->
+    <div class="char_bg" id="section_char">
+        <!-- 背景圖-->
+        <div class="char">
+            <!-- 腳色介紹區塊-->
+            <div class="char_title"></div>
+            <div class="game_char">
+                <!-- 腳色大袋子-->
+                <div class="sv_content">
+                    <div class="sv_nav" style="z-index: 20;">
+                        <!-- 1-->
+                        <div class="sv_button on head_img"><img src="./char/1jackie.png" alt="">
+                        </div>
+                        <div class="sv_intro on">
+                            <!-- 介紹袋子-->
+                            <div class="body_img">
+                                <img id="sv1" src="./allchar/1.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【06M-RF01】JACKIE</h1>
+                            </div>
+                            <div class="sv_say">
+                                「再來...再來...我還要更多!!」
+                            </div>
+                            <div class="sv_text">
+                                <!-- 角色資訊-->
+                                <h3>【職業】連續殺人魔</h3>
+                                <h3>【故事背景】</h3>
+                                有著顯赫政治地位的文斯勒一家的夫人及女兒，是她首次犯案的受害者。
+                                她是名駭人聽聞的連續殺人魔，受害者已逾三十人。
+                                人們為她取了個外號是「絞殺者」，因為每次做案她都會將屍體肢解成碎塊，小至難以辨別，非要將碎屍塊宛如拼圖般能拼湊起來不可。
+                                她因為那殘忍至極的殺人手法及滴水不漏的善後處理聞名。
+                                安潔拉．文斯勒是傑琪的頭號受害者，而她的屍體至今仍未被尋獲。
+
+                                <h3>【角色特性】</h3>
+                                傑琪殺人後獲得額外攻擊力高得嚇人。
+                                好好利用並維持這個優勢。傑琪或許有能力發動猛攻，但她的護甲值與生命值相當低落。
+                                得在開戰前取得足夠的防禦裝備。
+                            </div>
+                        </div>
+                        <!-- 1結束-->
+                        <!-- 2-->
+                        <div class="sv_button head_img"><img src="./char/31Yuki.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <!-- 介紹袋子-->
+                            <div class="body_img1">
+                                <img src="/allchar/31.png" alt="yuki">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【17M-RFT31】YUKI</h1>
+                            </div>
+                            <div class="sv_say">
+                                「有什麼是我能為你效勞的嗎？」
+                            </div>
+                            <div class="sv_text">
+                                <!-- 角色資訊-->
+                                <h3>【職業】高中生</h3>
+                                <h3>【故事背景】</h3>
+                                有著完美無瑕般風度的劍道社高中生。
+                                他從不會因小事而失去冷靜，總是做好萬全的準備去應對各種狀況。
+                                他的完美主義猶如一道無堅不催的冰牆，卻也同時像玻璃般容易受到打擊而粉碎。
+
+                                <h3>【角色特性】</h3>
+                                雪的優勢在於可以短暫封印對手的戰鬥技能。
+                                確保身上有足夠的補品，令你能隨時維持在「完美主義」的狀態。
+                            </div>
+                        </div>
+                        <!-- 2結束-->
+                        <!-- 3-->
+                        <div class="sv_button head_img"> <img src="./char/3Chiara.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <!-- 介紹袋子-->
+                            <div class="body_img2">
+                                <img src="./allchar/3.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【16M-RFT21】CHIARA</h1>
+                            </div>
+                            <div class="sv_say">
+                                「結束了…再也沒有任何事物能救贖我…」
+                            </div>
+                            <div class="sv_text">
+                                <!-- 角色資訊-->
+                                <h3>【職業】修女</h3>
+                                <h3>【故事背景】</h3>
+                                出生時就被送到一座封閉的天主教修道院，每天都接受神是全知全能的洗腦灌輸。
+                                當終於被獲准離開修道院出外傳教時，她深信著自己是受上帝所庇護的，於是來到了當地治安最險惡的城鎮傳教，最後遭人綁架。
+                                在她身處人口販賣市場的那段漫長日子裡，被逼著做她所認為骯髒下賤的事情。她逐漸萌生了質疑起上帝的念頭，也令她對被玷汙的自己產生強烈的厭惡感。
+                                每當她看見美麗而純潔的事物，都是讓她陷入自我厭惡而情緒崩潰。
+                                <h3>【角色特性】</h3>
+                                琪婭拉的極印可以不斷消弱敵人，這對持久戰十分有利。
+                                審判降臨可對疊滿極印的敵人造成巨量的打擊。
+                            </div>
+                        </div>
+                        <!-- 3結束-->
+                        <!-- 4-->
+                        <div class="sv_button head_img"><img src="./char/29LiDailin.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <!-- 介紹袋子-->
+                            <div class="body_img3">
+                                <img src="./allchar/29.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【16M-RFT20】<br>LI DAILIN</h1>
+                            </div>
+                            <div class="sv_say">
+                                「能請你從我的生命中離開嗎？」
+                            </div>
+                            <div class="sv_text">
+                                <!-- 角色資訊-->
+                                <h3>【職業】無業遊民</h3>
+                                <h3>【故事背景】</h3>
+                                武術世家唯一的獨生女。為將武術流傳下去，家人不顧及她的感受逼著她習武。使她對武術心生厭惡。
+                                作為報復，她捨棄作為武術家的尊嚴，逃離了世代傳承的道館，選擇過著浪跡天崖的生活。
+                                只有當身上沒了酒錢，她才會隨便找些零工來做。
+                                跟她的名字比起來，「李花子（李化子）」這個外號在她的家鄉更有名。
+
+                                <h3>【角色特性】</h3>
+                                黛琳在喝醉時就能一展他的過人武藝。最好確保背包裡始終都備有酒。
+                                黛琳是一名酒鬼，能輕易找到隱藏在各處的酒。
+                            </div>
+                        </div>
+                        <!-- 4結束-->
+                        <!-- 5-->
+                        <div class="sv_button head_img"><img src="./char/12Arda.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <!-- 介紹袋子-->
+                            <div class="body_img4">
+                                <img src="./allchar/12.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【14M-RFT24】ARDA</h1>
+                            </div>
+                            <div class="sv_say">
+                                「人們總是會留下痕跡」
+                            </div>
+                            <div class="sv_text">
+                                <!-- 角色資訊-->
+                                <h3>【職業】大學研究生</h3>
+                                <h3>【故事背景】</h3>
+                                於尊敬的教授底下進行研究的大學研究生。
+                                當教授遭人指控偽造其挖掘的考古文物時，他挺身而出站在教授這邊並為她辯護。
+                                但他也逐漸被他人的指控所影響，最後聽信謠言質疑起自己的教授。
+                                因此當教授的清白最終被證實時，他開始對「相信」這件事抱持著很深的不信任。
+                                雖然他經常板著張臉面無表情，不過那只是不太將情緒表現在臉上而已。
+                                他常被人看到用茶杯喝提神飲料。
+
+                                <h3>【角色特性】</h3>
+                                阿爾達的工藝鑑定用他與敵方的裝備稀有度的差別加額外真傷。
+                                早期在打架前先裝備一些基礎裝備。
+                                打架時用他的禁止挖掘來阻礙敵人的搜索率,讓他們找不到需要的道具。
+                            </div>
+                        </div>
+                        <!-- 5結束-->
+                        <!-- 6-->
+                        <div class="sv_button head_img"><img src="./char/6Hart.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <!-- 介紹袋子-->
+                            <div class="body_img5">
+                                <img src="./allchar/6.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【16M-RFT22】HART</h1>
+                            </div>
+                            <div class="sv_say">
+                                「愛與和……平？」
+                            </div>
+                            <div class="sv_text">
+                                <!-- 角色資訊-->
+                                <h3>【職業】吉他手</h3>
+                                <h3>【故事背景】</h3>
+                                她被愛和音樂能夠改變世界的信念所感動，讓她從此迷上了搖滾樂。
+                                她的樂團名聲遠近馳名，受到許多經紀公司的邀約。
+                                但是哈特卻拒絕了這些邀請，因為這樣她就沒辦法演奏自己想要的音樂了。
+                                然而其他被現實壓力所苦的樂團成員們，在她不知情的情況簽下了合約。
+                                遭到同伴背叛的打擊令她錯愕不已。
+                                為了證明自己是對的，讓她要用音樂來改變人的想法更加執著。
+
+                                <h3>【角色特性】</h3>
+                                「和平使者」能使人無法在該區域發生任何戰鬥，能否恰當運用這個能力很重要。
+                                敵人的武器越強，「不和諧音」就會越強。
+                            </div>
+                        </div>
+                        <!-- 6結束-->
+                        <!-- 10-->
+                        <div class="sv_button head_img"><img src="./char/10HyunWoo.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <!-- 介紹袋子-->
+                            <div class="body_img6">
+                                <img src="./allchar/10.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【14M-RFT04】HYUNWOO</h1>
+                            </div>
+                            <div class="sv_say">
+                                「事情不會再更糟了」
+                            </div>
+                            <div class="sv_text">
+                                <!-- 角色資訊-->
+                                <h3>【職業】高中生</h3>
+                                <h3>【故事背景】</h3>
+                                玹雨不曾懷抱過夢想或希望。自己對於未來所能感受到的只有焦慮與不安。
+                                為了逃避對未來的恐懼，他能做的就是不斷找人打架與飆車，僅僅追求一時刺激而活在當下。
+                                然而無論再怎麼欺騙自己，他內心的焦慮依然揮之不去，不斷地潛藏在他的內心深處。
+                                成年後最想做的就是堂堂正正地去買張彩券。
+                                比起家人，他更看重自己的死黨。
+
+                                <h3>【角色特性】</h3>
+                                玹雨的惡鬥能迅速的幫助自己提高熟練度。主動發起進攻能有效地快速增強自己的實力。
+                            </div>
+                        </div>
+                        <!-- 10結束-->
+                        <!-- 11-->
+                        <div class="sv_button head_img"><img src="./char/24Adela.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <!-- 介紹袋子-->
+                            <div class="body_img7">
+                                <img src="./allchar/24.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【17M-RFT28】ADELA</h1>
+                            </div>
+                            <div class="sv_say">
+                                「何必白費力氣呢？反正勝利最後一定是屬於我的」
+                            </div>
+                            <div class="sv_text">
+                                <!-- 角色資訊-->
+                                <h3>【職業】西洋棋世界冠軍</h3>
+                                <h3>【故事背景】</h3>
+                                身為西洋棋世界冠軍。擺在她面前的唯有勝利。
+                                在她的字典裡沒有「失敗」這兩個字。
+                                她隨時能夠預測下一步並且完美的執行。
+                                平常她的步調總是比較緩慢，有時甚至會讓人感到不耐煩。
+                                可是當比賽開始，她就會全神關注於比賽，仿佛變了一個人。
+                                她喜歡思考計畫一切，尤其當她所制定的戰術策略及精準的決策判斷讓自己贏得比賽時，更會令她雀躍不已。
+
+                                <h3>【角色特性】</h3>
+                                能使用「升變」來提升武器等級。
+                                如果有計畫性地使用「將軍！」，就能夠在僅僅8秒後再次使用該技能。
+                            </div>
+                        </div>
+                        <!-- 11結束-->
+                        <!-- 12-->
+                        <div class="sv_button head_img"><img src="./char/21Sissela.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <!-- 介紹袋子-->
+                            <div class="body_img8">
+                                <img src="./allchar/21.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【17M-RFT27】SISSELA</h1>
+                            </div>
+                            <div class="sv_say">
+                                「活著是一種痛苦。等待著我的也只有更多的痛苦」
+                            </div>
+                            <div class="sv_text">
+                                <!-- 角色資訊-->
+                                <h3>【職業】絕症患者</h3>
+                                <h3>【故事背景】</h3>
+                                她身患世上僅有百餘人罹患的不治之症。年幼時被診斷出來，從那時後便沒離開過醫院。
+                                她時常承受著難以忍受的痛楚，儘管數次試著自殺，但始終沒有成功。
+                                醫學界將她視為是難能可貴的重要樣本，因此動用許多最尖端的醫療技術與鉅額的藥物補助來研究她的病情。
+                                可是在她眼中看來，他們不過僅僅是為了拿自己的身體做研究，才讓她苟延殘喘的活在這裡。
+                                她總是面無表情，也不愛講話。由於從小就生活在醫院的緣故，所以與其他人交談時會感到很不自在。
+                                她有著會在周遭的物體畫上眼睛嘴巴並給它們取名、和它們說話的習慣。
+
+                                <h3>【角色特性】</h3>
+                                希瑟拉的痛苦忍受效果會隨著交戰時間的延長而增強。
+                                希瑟拉準備的恢復物品可利用解除枷鎖來贏得戰鬥。
+                            </div>
+                        </div>
+                        <!-- 12結束-->
+                        <!-- 13-->
+                        <div class="sv_button head_img"><img src="./char/9Shoichi.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <!-- 介紹袋子-->
+                            <div class="body_img9">
+                                <img src="./allchar/9.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【16M-RFT23】SHOICHI</h1>
+                            </div>
+                            <div class="sv_say">
+                                「那麼，這份髒工作值得你開多少價碼呢？」
+                            </div>
+                            <div class="sv_text">
+                                <!-- 角色資訊-->
+                                <h3>【職業】證券營業員</h3>
+                                <h3>【故事背景】</h3>
+                                他曾經是個平庸無能的老實上班族。
+                                當他的妻子死於先天性心臟病時，他整個人像是變了一樣。
+                                因為沒有錢害得妻子沒辦法接受適當的手術及治療，他將妻子的死歸咎於金錢。
+                                而他認知到總有一天，遺傳妻子疾病的女兒也死於相同的疾病。
+                                使他下定決心為了錢什麼髒事都願意做。
+                                他能夠面無表情地談論，實際存在的東西才能決定本身的價值。
+                                他喜歡喝茶勝過咖啡，但他卻認為喝茶很老氣。
+
+                                <h3>【角色特性】</h3>
+                                彰一很擅長利用敵人的弱點，他能活用這項優勢主動發起致命攻擊。
+                                「非法利益」是個能使你在與敵人一對一交戰時，擴大雙方武器熟練度差距的一大利器。
+                            </div>
+                        </div>
+                        <!-- 13結束-->
+                        <!-- 14-->
+                        <div class="sv_button head_img"><img src="./char/8Alex.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <!-- 介紹袋子-->
+                            <div class="body_img10">
+                                <img src="./allchar/8.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【14M-RFT13】ALEX</h1>
+                            </div>
+                            <div class="sv_say">
+                                「擁有真理，自會揭示名為未來的神秘面紗」
+                            </div>
+                            <div class="sv_text">
+                                <!-- 角色資訊-->
+                                <h3>【職業】特務</h3>
+                                <h3>【故事背景】</h3>
+                                精通6國語言，擅長操作所有類型的武器。
+                                他似乎很喜歡玩俄羅斯方塊。
+                                與其優異的身體能力不同的事，他的臉色總是看起來不太好。
+                                除此之外的事情均不詳。
+
+                                <h3>【角色特性】</h3>
+                                亞歷克斯能操作各種類型的武器。所以不管是哪種，你都能視情形選擇最好的裝備。
+                                「孤注一擲」可以造成驚人的傷害，但也必須做好事前準備。
+                                試著在潛行狀態下使用。
+                            </div>
+                        </div>
+                        <!-- 14結束-->
+                        <!-- 15-->
+                        <div class="sv_button head_img"><img src="./char/30Nathapon.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <!-- 介紹袋子-->
+                            <div class="body_img11">
+                                <img src="./allchar/30.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【17M-RFT30】NATHAPON</h1>
+                            </div>
+                            <div class="sv_say">
+                                「人都身處在追尋什麼事物的旅途，不是嗎？」
+                            </div>
+                            <div class="sv_text">
+                                <!-- 角色資訊-->
+                                <h3>【職業】攝影師</h3>
+                                <h3>【故事背景】</h3>
+                                他是個雲遊四海的攝影師．手下的快門從來沒停過。
+                                他是個天性樂觀且有著良好適應力的人，儘管別人聽起來可能會覺得有點奇怪，但是他其實不太與人來往。
+                                每當他起床睜開眼睛的瞬間，他就會起來仔細檢視相機裡的照片，生怕遺漏了什麼。
+
+                                <h3>【角色特性】</h3>
+                                納塔朋可使用「時間軌跡」來迅速提升等級，而不需要進行戰鬥。
+                                「取景」在戰鬥繼續時更有效。
+                                別忘記在有「時間軌跡」的區域使用效果會翻倍。
+                            </div>
+                        </div>
+                        <!-- 15結束-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="map_bg" id="section_map">
+        <div class="map">
+            <div class="map_title"></div>
+            <div class="map_box">
+                <div class="map_item map1"><img src="./map/1Lake.png" alt=""></div>
+                <div class="map_item map2"><img src="./map/2PostOffice.png" alt=""></div>
+                <div class="map_item map3"><img src="./map/3SeoulForest.png" alt=""></div>
+                <div class="map_item map4"><img src="./map/4Island.png" alt=""></div>
+                <div class="map_item map5"><img src="./map/5Mountain.png" alt=""></div>
+                <div class="map_item map6"><img src="./map/6MilitaryBase.png" alt=""></div>
+                <div class="map_item map7"><img src="./map/7Boulevard.png" alt=""></div>
+                <div class="map_item map8"><img src="./map/8Bridge.png" alt=""></div>
+                <div class="map_item map9"><img src="./map/9ConventionCenter.png" alt=""></div>
+                <div class="map_item map10"><img src="./map/10SportsComplex.png" alt=""></div>
+                <div class="map_item map11"><img src="./map/11Staion.png" alt=""></div>
+                <div class="map_item map12"><img src="./map/12Avenue.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="bg_modal1">
+        <div class="modal_content">
+            <img src="./map/1Lake-detail.png" alt="">
+        </div>
+        <div class="close">+</div>
+    </div>
+
+    <div class="bg_modal2">
+        <div class="modal_content">
+            <img src="./map/2PostOffice-detail.png" alt="">
+        </div>
+        <div class="close">+</div>
+    </div>
+    <div class="bg_modal3">
+        <div class="modal_content">
+            <img src="./map/3SeoulForest-detail.png" alt="">
+        </div>
+        <div class="close">+</div>
+    </div>
+    <div class="bg_modal4">
+        <div class="modal_content">
+            <img src="./map/4Island-detail.png" alt="">
+        </div>
+        <div class="close">+</div>
+    </div>
+    <div class="bg_modal5">
+        <div class="modal_content">
+            <img src="./map/5Mountain-detail.png" alt="">
+        </div>
+        <div class="close">+</div>
+    </div>
+    <div class="bg_modal6">
+        <div class="modal_content">
+            <img src="./map/6MilitaryBase-detail.png" alt="">
+        </div>
+        <div class="close">+</div>
+    </div>
+    <div class="bg_modal7">
+        <div class="modal_content">
+            <img src="./map/7Boulevard-detail.png" alt="">
+        </div>
+        <div class="close">+</div>
+    </div>
+    <div class="bg_modal8">
+        <div class="modal_content">
+            <img src="./map/8Bridge-detail.png" alt="">
+        </div>
+        <div class="close">+</div>
+    </div>
+    <div class="bg_modal9">
+        <div class="modal_content">
+            <img src="./map/9ConventionCenter-detail.png" alt="">
+        </div>
+        <div class="close">+</div>
+    </div>
+    <div class="bg_modal10">
+        <div class="modal_content">
+            <img src="./map/10SportsComplex-detail.png" alt="">
+        </div>
+        <div class="close">+</div>
+    </div>
+    <div class="bg_modal11">
+        <div class="modal_content">
+            <img src="./map/11Staion-detail.png" alt="">
+        </div>
+        <div class="close">+</div>
+    </div>
+    <div class="bg_modal12">
+        <div class="modal_content">
+            <img src="./map/12Avenue-detail.png" alt="">
+        </div>
+        <div class="close">+</div>
+    </div>
+
+
+    <div>
+        <a href="#top" class="up"></a>
+    </div>
+
+    <div id="mPlayer">
+        <div></div>
+    </div>
+</body>
+
+</html>

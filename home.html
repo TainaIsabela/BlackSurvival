@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Survival</title>
+    <link rel="icon" href="./icon/icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./map.css">
+    <script src="jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <script>
+
+            //角色圖
+            $(function () {
+                $(".sv_button img").addClass("filtercss");
+                $(".sv_intro").hide();
+                $(".on").show();
+                $(".on img").removeClass("filtercss");
+
+                $(".sv_button").click(function () {
+                    $(".sv_button img").addClass("filtercss");
+                    $(".sv_intro").hide();
+                    $(".sv_intro").find("img").addClass();
+                    $(this).next().fadeIn(500);
+                    $(".sv_text").show();
+                    $(this).find("img").removeClass("filtercss");
+                })
+            })
+            //特色圖
+            $(function () {
+                $(".pic_button>img").addClass("opacitycss");
+                $(".on>img").removeClass("opacitycss");
+                $(".pic_feature").hide();
+                $(".on").show();
+
+                $(".pic_button").click(function () {
+                    $(".pic_button img").addClass("opacitycss")
+                    $(".pic_feature").hide();
+                    $(".pic_feature").find("img").addClass();
+                    $(this).next().slideDown(400);
+                    $(this).find("img").removeClass("opacitycss");
+                })
+            })
+
+            $('.up .close').click(function () {
+                $('.up').hide();
+            });
+
+    </script>
+    <div class="header_bg" id="section_header">
+    </div>
+    <div class="char_bg" id="section_char">
+        <div class="char">
+            <div class="game_char">
+                <div class="sv_content">
+                    <div class="sv_nav" style="z-index: 20;">
+                        <div class="sv_button on head_img"><img src="./char/Adela.png" alt="">
+                        </div>
+                        <div class="sv_intro on">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Adela.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【17M-RFT28】ADELA</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Por que desperdiçar esforços? De qualquer forma, a vitória deve pertencer a mim no final」
+                                
+                            </div>
+                            <div class="sv_text">
+                                <h3><br>【Ocupação】campeã mundial de xadrez</h3>
+                                Como o campeã mundial de xadrez. Há apenas vitória diante dela.
+                                 A palavra "fracasso" não está em seu dicionário.
+                                 Ela é sempre capaz de prever o próximo passo e executá-lo com perfeição.
+                                 Normalmente seu ritmo é sempre lento, às vezes até impaciente.
+                                 <br><br>
+                                 Mas quando o jogo começar, ela se concentrará no jogo, como se tivesse mudado.
+                                 Ela gosta de pensar e planejar tudo, principalmente quando as estratégias táticas e os julgamentos precisos de decisão que ela formula a fazem vencer o jogo, o que a deixa ainda mais empolgada.
+
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Adriana.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Adriana.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【17M-RFT29】ADRIANA</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Está meio frio... Onde coloquei aquele fósforo?」
+                                
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Incendiária</h3>
+                                Chamas brilham onde quer que ela vá. Ela é criminosa de uma série de incêndios que atingiram todo o país do México com terror.
+                                <br>
+                                Ela atira fogo em prédios e fábricas vazios, com um cano na boca.
+                                Ela costuma falar gentilmente com o céu vazio ou chamar o nome de alguém. Com quem ela está falando?
+                                 
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Aiden.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img_Aiden" src="./allchar/Aiden_Effect.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【21M-RFT50】AIDEN</h1>
+                            </div>
+                            <div class="sv_say">
+                                「A vida não deve ser fácil para todos.」
+                                
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Mercenário</h3>
+                                Um mercenário sem passado.
+                                <br>
+                                Ele desapareceu há 8 anos após uma tentativa de recrutá-lo, e três membros do Esquadrão Especial morreram no incidente. Encontramos registros mencionando que ele trabalhava como mercenário desde então, mas os detalhes de suas atividades estão faltando.
+                                <br><br>
+                                De acordo com a pouca documentação que lutamos para descobrir, diz que a equipe que ele liderava voltou viva de qualquer missão.
+                                 
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Alex.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Alex.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【14M-RFT13】ALEX</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Possuir a verdade revela o mistério chamado futuro」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】espião</h3>
+                                Proficiente em 6 idiomas, bom em operar todos os tipos de armas.
+                                 Ele parece gostar de jogar Tetris.
+                                 Ao contrário de sua excelente habilidade física, sua aparência sempre parece ruim.
+                                 Todo o resto é desconhecido.
+
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Arda.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Arda.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【14M-RFT24】ARDA</h1>
+                            </div>
+                            <div class="sv_say">
+                                「as pessoas sempre deixam rastros」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】estudante graduado</h3>
+                                Um estudante de pós-graduação em uma universidade conduzindo pesquisas com um professor respeitado.
+                                 Ele defendeu a professora e a defendeu quando ela foi acusada de falsificar os artefatos arqueológicos que ela escavou.
+                                 Mas ele também foi gradualmente influenciado pelas acusações de outras pessoas e, finalmente, ouviu rumores e questionou seu professor.
+                                 <br><br>
+                                 Então, quando a inocência do professor foi finalmente provada, ele começou a ter uma profunda desconfiança de "acreditar".
+                                 Embora muitas vezes ele tenha uma cara séria e inexpressiva, é que ele não expressa suas emoções em seu rosto.
+                                 Ele é frequentemente visto bebendo bebidas refrescantes em xícaras de chá.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Aya.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Aya.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【14M-RFT11】AYA</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Pela minha luz, pela minha justiça.」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Policial</h3>
+                                Ela se tornou policial apenas com base em seu desejo de justiça. Mas ela está tendo dúvidas sobre seu trabalho depois que sua família se envolveu em um caso de assassinato. Ao mesmo tempo, ela ficou mais obcecada com a justiça do que começou a pensar que é a única pessoa que pode trazer justiça ao mundo.
+                                <br><br>
+                                Ela é repulsiva ao ver o cadáver. Quando ela ocasionalmente tem que inspecionar cadáveres de animais, isso coloca um estresse severo nela. O nome do irmão dela é Suzuki Hikaru. Ele perdeu as duas pernas.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Barbara.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Barbara.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【16M-RFT15】BARBARA</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Vocês são todos ignorantes sobre o brilho da minha invenção.」
+                            </div>
+                            <div class="sv_text">
+                                <h3><br>【Ocupação】Geek</h3>
+                                Ela sempre sonhou em se tornar engenheira, mas acabou na faculdade de medicina por causa da pressão da família. Depois que seus pais morreram, não havia ninguém para interferir em seu trabalho e ela se concentrou em fazer seu próprio robô por 15 anos. Infelizmente, logo após a conclusão, ela ficou sem fundos e seu robô ficou incompleto.
+                                <br><br>
+                                Ela tem sede do reconhecimento dos outros, por isso fica facilmente animada quando elogiada um pouco. Trancar-se em sua casa por 15 anos a deixou sem contato.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Bernice.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Bernice.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【16M-RFT26】BERNICE</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Meu objetivo sempre aponta para vermes, distantes do humano.」
+                            </div>
+                            <div class="sv_text">
+                                <h3><br>【Ocupação】Caçador</h3>
+                                Um caçador, vivendo isolado da civilização. Normalmente, ele se importa com o gado ou caça para viver. De vez em quando, ele cuidava dos animais que poderiam prejudicar as pessoas ou afugentar os caçadores. Ele gostava de uma mulher uma vez na juventude, mas ela já estava noiva e ele não queria fazer rumores sobre 'fazer amor com homem estrangeiro' para tornar sua vida miserável. Então ele deixou a vila por conta própria.
+                                <br><br>
+                                Ele não bebe, pois perde o controle sobre si mesmo, mas fumava muito. Durante sua juventude, por apenas uma vez, ele perseguiu um homem.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Bianca.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Bianca.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【20M-RFT45】BIANCA</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Mal posso esperar para provar seu sangue.」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Estudante do ensino médio</h3>
+                                Ela se considera uma vampira.
+
+                                Ela usa um guarda-chuva, alegando que o sol pode queimá-la. Ela veste roupas góticas e fala como uma velha nobre. Todo mundo, incluindo sua família, pensava que ela estava interpretando.
+                                <br><br>
+                                Mas um dia, havia uma nota em seu quarto, dizendo que ela não seria capaz de voltar para casa por um tempo, junto com sacos de sangue de origem misteriosa.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Camilo.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img_Camilo" src="./allchar/Camilo.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【16M-RFT25】CAMILO</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Até uma flor perde sua beleza, na sua frente.」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Ballerino</h3>
+                                Ele é um dançarino sempre chamando a atenção com sua beleza e poses impressionantes . Sua beleza é igualada por seu talento em dança, reconhecido até pela Royal Arts Academy. Ele está ciente de sua beleza e talento extraordinários e gosta de ter seu charme e beleza validados por outras pessoas. Sua visão de mundo é totalmente egocêntrica, então ele é sempre brutalmente honesto com seus sentimentos e, especialmente, não se importa com a dor ou tristeza de outras pessoas. Ele sempre carrega uma rosa, mas ninguém sabe de onde ele a tirou.
+                                <br><br>
+                                Palavras de beleza como "Elegante!" "Hermoso!" "Bonito!" sempre pode ser ouvido perto dele.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Cathy.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Cathy.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【14M-RFT14】CATHY</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Sangue e cadáveres são meus campos de especialização.」
+                            </div>
+                            <div class="sv_text">
+                                <h3><br>【Ocupação】Doutora </h3>
+                                Sua natureza gentil e sentimental é problemática, pois a envolvem demais com seus pacientes. Ela foi demitida devido a várias práticas médicas decorrentes de sua simpatia desnecessária. Atualmente, ela está administrando um médico gratuito apoiado pelos moradores locais para mal ganhar seu pão diário.
+                                <br>
+                                <br>
+                                Eles sabem que ela é gentil, mas também um pouco estranha. Então, quando a doença fica grave, eles visitam um hospital maior.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Celine.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Celine.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【21M-RFT48】CELINE</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Não há nada que uma explosão não possa resolver.」
+                            </div>
+                            <div class="sv_text">
+                                <h3><br>【Ocupação】Técnica EODa </h3>
+                                Quem poderia dizer o que está na mente deste técnico de EOD? Ela tem uma maneira peculiar de pensar, o que a torna difícil de prever. Ela é indiferente a qualquer coisa que não se relacione com bombas ou explosões. Ela fazia parte da equipe de descarte de ordenanças explosivas. Depois de receber alta, ela desapareceu durante o tratamento com TEPT.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"> <img src="./char/Chiara.png" alt="">
+                        </div>
+                        <div class="sv_intro"> 
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Chiara.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【16M-RFT21】CHIARA</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Acabou... Nada mais pode me salvar...」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Freira</h3>
+                                Quando ela nasceu, ela foi enviado para um mosteiro católico fechado, onde sofreu uma lavagem cerebral todos os dias de que Deus é onisciente e onipotente.
+                                <br><br>
+                                 Quando ela finalmente foi autorizada a deixar o mosteiro para pregar, ela acreditava firmemente que estava protegida por Deus, então ela foi para a cidade com a lei local mais perigosa e ordem para pregar, e finalmente foi sequestrada.
+                                 <br><br>
+                                 Durante aqueles longos dias no mercado de tráfico humano, ela foi forçada a fazer o que considerava sujo e degradante. Ela gradualmente desenvolveu a ideia de questionar a Deus, o que também a fez sentir-se fortemente enojada com seu eu corrompido.
+                                 Sempre que ela vê algo belo e puro, isso a faz cair em si mesma
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"> <img src="./char/Chloe.png" alt="">
+                        </div>
+                        <div class="sv_intro"> 
+                            <div class="body_img">
+                                <img class="char_img_Chloe" src="./allchar/Chloe.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【20M-RFT46】CHLOE</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Você viu minha marionete se movendo? Esquisito.」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Marionetista</h3>
+                                Uma marionetista bem-comportada que sempre tem um sorriso brilhante no rosto.
+                                <br><br>
+                                Ela aborda as pessoas de maneira gentil, como se fossem crianças pequenas e as faz baixar a guarda com suas habilidades sociais extremas. As pessoas pensam nela como uma pessoa de bom humor, pois ela nunca mostra ou expressa sentimentos negativos, como raiva ou frustração.
+                                <br><br>
+                                No entanto, ela pode mostrar suas cores verdadeiras quando fala com sua marionete 'Nina'.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Daniel.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Daniel.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【19M-RFT40】DANIEL</h1>
+                            </div>
+                            <div class="sv_say">
+                                É necessário um alfinete afiado para empalar as asas de uma borboleta na parede.
+                            </div>
+                            <div class="sv_text">
+                                <h3><br>【Ocupação】Cabeleireiro</h3>
+                                Ele é um cabeleireiro de cabelos compridos que é muito proficiente em expressar sua estética com uma tesoura.
+                                Ele geralmente não pergunta a seus clientes sobre o penteado desejado. Ele é capaz de visualizar o olhar acabado em sua cabeça, apenas com base em sua primeira impressão, e se concentra até realizar o visual. Os penteados e a aparência que ele cria sempre mantêm sua beleza por um longo tempo. Os clientes geralmente se sentem desconfortáveis com sua falta de hospitalidade, mas suas habilidades são tão impecáveis que acabam concedendo.
+                                <br><br>
+                                Um dia, ele disse que era urgente refazer o cabelo de um cliente e pediu para trabalhar fora do salão. Ele arrumou seus pertences pessoais e foi embora, mas nunca mais voltou. Segundo um de seus colegas da lista de cabelo, ele deixou o salão com uma expressão de raiva.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Echion.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Echion.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【14M-RFT44】ECHION</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Você precisa de um motivo para lutar? Somente idiotas encontram razões.」
+                            </div>
+                            <div class="sv_text">
+                                <h3><br>【Ocupação】Desconhecido</h3>
+                                Ele corre para o inimigo na frente dele sem hesitar. Parece que ele nasceu apenas para lutar.
+                                Ele pode não ter inteligência para elaborar uma estratégia, mas é capaz de suprimir seu inimigo com excelentes reflexos e habilidades de combate.
+                                <br><br>
+                                Ele esqueceu seu nome verdadeiro, sua nacionalidade e o resto de sua identidade. Ele não sabe como perdeu o braço e quando ganhou o braço protético. A única coisa que ele sabe é lutar contra o que está à sua frente, conforme solicitado por alguém que deu seu nome.
+                                Devido à sua perda de memória, ele não possui habilidades de comunicação e bom senso e confunde quem o conhece pela primeira vez.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Elena_no effect.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img_Elena" src="./allchar/Elena_no effect.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【22M-RFT52】ELENA</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Este lugar será inverno em breve.」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Patinadora</h3>
+                                Uma patinadora júnior renomada!!
+                                Sua aparência nobre, elegância e personalidade forte atraíram muita atenção do público, mas sua vida foi derrubada após a perda de seu pai.
+                                <br><br>
+                                Ela foi relatada como desaparecida devido a problemas de herança familiar.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Eleven (1).png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img_Eleven" src="./allchar/Eleven (1).png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【19M-RFT39】ELEVEN</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Você não se sente ótimo depois de uma boa refeição?」
+                            </div>
+                            <div class="sv_text">
+                                <h3><br>【Ocupação】Streamer</h3>
+                                Ela opera um canal de transmissão de streaming chamado < Décima Primeira Tabela >
+                                <br>
+                                Ela geralmente se transmite comendo e elogiando todos os alimentos que come. Ela tem um fandom composto por fãs apaixonados por causa de sua voz brilhante e fofa, várias reações divertidas e uma atitude de sempre fazer o seu melhor. Um de seus vídeos mais populares é ela comer 89 sabores diferentes de macarons que encheram todo o quarto. Ela também se dedica a revisar os alimentos de rua depois de experimentar o yóutiáo ( 代 ) e ficou impressionada com o sabor.
+                                <br><br>
+                                Desde que sua identidade como filha única de um CEO rico foi revelada recentemente ao público, ela não enviou nenhum novo conteúdo em seu canal.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Emma (1).png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img_Emma" src="./allchar/Emma (1).png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【18M-RFT38】EMMA</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Vou lhe mostrar uma coisa completamente nova!」
+                            </div>
+                            <div class="sv_text">
+                                <h3><br>【Ocupação】Mágica</h3>
+                                Ela sempre realiza truques de mágica gratuitos na rua com cartões, moedas e até chapéus, mas sua especialidade é fazer truques de cartas.
+                                <br>
+                                Seu público a chama de 'Begi Emma', uma palavra derivada de Beginner. Embora ela possa estar muito alta quando ri ou fala, ela é facilmente acessível e amigável, e é difícil odiá-la.
+                                <br><br>
+                                Ela seguiu sua carreira mágica assim que se tornou adulta e sempre quis viver livremente das regras estritas de seus pais. Há rumores de que ela saiu de casa para se tornar uma grande mágica, a fim de encontrar seu avô.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Eva.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img_Eva" src="./allchar/Eva.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【02M-RF42】EVA</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Eu só queria viver uma vida normal. Eu não sabia o quão difícil era conseguir isso.」
+                            </div>
+                            <div class="sv_text">
+                                <h3><br>【Ocupação】Estudante do ensino médio</h3>
+                                Sempre que alguém falava com ela, ela sorria gentilmente e respondia de tal maneira que nada sobre si mesma fosse revelado. Há algo de misterioso e secreto nela.
+                                <br><br>
+                                Seus receptores de dor são insensíveis, então ela costuma esbarrar em coisas e quedas. Ela não percebe seus machucados e feridas. Ela pode parecer frágil devido à sua petitude, no entanto, ela possui um poder que todos temeriam.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Felix.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img_Felix" src="./allchar/Felix.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【22M-RFT53】FELIX</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Deixe-me saber se há algo que eu possa fazer para ajudar.」
+                            </div>
+                            <div class="sv_text">
+                                <h3><br>【Ocupação】Balconista</h3>
+                                Um funcionário do supermercado durante o dia e um herói do beco à noite.
+                                <br>
+                                Ele nunca pode deixar alguém em apuros sozinho e, com sua personalidade brilhante e animada, ele sempre tenta ajudar as pessoas necessitadas. Embora ele seja apenas um estudante em licença para pagar seus empréstimos, ele é o que os outros podem chamar de 'herói'. Talvez seja por isso que ele guardou os becos com uma lança, limpando todas as quadrilhas de traficantes que contaminavam a área.
+                                <br><br>
+                                Um dia, enquanto invadia uma quadrilha de narcotráfico, ele desapareceu de repente depois de dizer que precisava salvar mais pessoas.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Fiora.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Fiora.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【14M-RFT02】FIORA</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Cintura! Pescoço! Sua postura é uma bagunça!」
+                            </div>
+                            <div class="sv_text">
+                                <h3><br>【Ocupação】Esgrimista</h3>
+                                Uma excelente jogadora de esgrima. Sua família influenciou sua postura direta e o orgulho. O pai dela era tão tacanho que ele pensava que as mulheres eram para servir chás da tarde. Ela começou a esgrima como uma rebelião contra o pai e seu desejo de ser reconhecido por ela.
+                                <br><br>
+                                Ela era boa em matemática na escola. Ela deseja proteger qualquer pessoa mais fraca que ela, mas deseja ser reconhecida por quem é mais forte que ela
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Hart.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Hart.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【16M-RFT22】HART</h1>
+                            </div>
+                            <div class="sv_say">
+                                「paz e amor?」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Guitarrista</h3>
+                                Ela foi movida pela crença de que o amor e a música poderiam mudar o mundo e se apaixonou pelo rock and roll desde então.
+                                 Sua orquestra é bem conhecida em todo o mundo e foi convidada por muitas corretoras.
+                                 Mas Hart recusou esses convites porque ela não seria capaz de tocar a música que queria.
+                                 <br><br>
+                                 Porém, outros integrantes da banda, que sofriam com a pressão da realidade, assinaram contratos sem o conhecimento dela.
+                                 Ela ficou chocada com a traição de seus companheiros.
+                                 Para provar que estava certa, ela se tornou mais persistente em sua ideia de usar a música para mudar as pessoas.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Hyejin.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Hyejin.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【14M-RFT12】HYEJIN</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Este deve ser outro caminho fadado.」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】xamã</h3>
+                                Ela é a único filha da família xamã hereditária. Seu destino de nascimento, se ela nascesse após o amanhecer, teria sido uma vela suave. Mas como ela nasceu antes do amanhecer, seu destino ditava que ela passaria por uma grande provação aos 18 anos para levar uma vida tranqüila. Ela parece aceitar seu destino como é. Devido à sua formação familiar, ela é uma forte fatalista.
+                                <br><br>
+                                Sua história favorita no livro é "Destino implacável". Ela costuma interpretar Bipa, um alaúde coreano para se comunicar com spiri ... para ser franco, parece que ela está murmurando para si mesma.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/HyunWoo.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img"  src="./allchar/HyunWoo.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【14M-RFT04】HYUNWOO</h1>
+                            </div>
+                            <div class="sv_say">
+                                「as coisas não podem piorar」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Estudante do ensino médio</h3>
+                                Hyun Woo nunca alimentou sonhos ou esperanças. Tudo o que posso sentir sobre o futuro é ansiedade e inquietação.
+                                 Para fugir do medo do futuro, tudo o que ele pode fazer é encontrar constantemente pessoas para lutar e arrancar, apenas para perseguir a emoção momentânea e viver o presente.
+                                 <br><br>
+                                 No entanto, não importa o quanto ele se enganasse, a ansiedade em seu coração ainda permanecia e espreitava nas profundezas de seu coração.
+                                 O que eu mais quero fazer quando for adulto é comprar um bilhete de loteria abertamente.
+                                 Ele valoriza seus melhores amigos mais do que sua família.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Isol.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img"  src="./allchar/Isol.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【15M-RFT16】ISOL</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Não pode parar por aqui.」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Guerrilheiro</h3>
+                                Seu nome era Marcelo quando ele estava em um orfanato e viveu lá até os 12 anos.
+                                <br>
+                                Ele escapou do orfanato por sugestão de seu amigo de confiança Francisco. Depois, ele se juntou ao grupo terrorista MOK. Isol é a única criança sobrevivente entre as crianças que se juntaram ao grupo na época.
+                                <br><br>
+                                Ele tende a usar uma maneira desnecessariamente cruel de matar. Ele está muito desinteressado em aprender sobre os outros, pois odeia desnecessariamente um relacionamento íntimo crescente com os outros.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Jackie.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Jackie.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【06M-RF01】JACKIE</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Mais...mais...mais!!」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Assassina em série</h3>
+                                Seu primeiro assassinato foi uma esposa e uma filha da família Winslair, proeminente na política. Ela é uma serial killer que matou mais de 30 pessoas. Ela ganhou o apelido de 'Quilt' porque ela rasga o corpo das vítimas em pedaços pequenos depois de matá-los. As peças eram muito pequenas para identificá-las, a menos que todas as peças fossem colocadas juntas como uma colcha. Ela é conhecida por seus métodos cruéis de matar e limpezas meticulosas.
+                                <br>
+                                <br>
+                                Angela Winslair foi a primeira vítima de Jackie e seu corpo nunca foi encontrado.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Jan.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Jan.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【18M-RFT35】JAN</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Vamos jogar de verdade!」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Kickboxer</h3>
+                                Um atleta kickboxer, que adora humor e tem uma personalidade alegre. Ele também é avaliado por muitos de seus fãs por suas atividades voluntárias.
+                                <br>
+                                Ele é o primeiro entre dois filhos de um famoso atleta muay tailandês. Ele começou a praticar Muay Thai com seu irmão mais novo enquanto estava no exterior, mas se envolveu em um incidente violento e sua educação foi interrompida no meio do caminho. Ele foi chamado de volta à Holanda por seu pai depois. Embora ele tenha habitado em seu passado e tenha recorrido à toxicodependência após o incidente, ele estava determinado a vencer e, eventualmente, estreou como kickboxer.
+                                <br>
+                                Apesar de constantemente rir e fazer piadas, quando ele começar a lutar, ele não parará de se enfurecer com seu oponente. Sua combinação de intermináveis ataques rápidos e pesados, definitivamente tornará seu oponente incapaz de escapar.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Jenny.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Jenny.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【14M-RFT07】JENNY</h1>
+                            </div>
+                            <div class="sv_say">
+                                「As jóias realmente brilham apenas na mão digna.」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Atriz</h3>
+                                Ela cresceu em uma família comum. Não é pobre e não é rico, não tem sorte e não é infeliz. Era o mais medíocre possível, e ela odiava essa mediocridade.
+                                <br><br>
+                                Jenny estava muito confiante sobre seu potencial de se tornar uma Superstar. Infelizmente, ela não ficou famosa como esperado após sua estréia. Ela ainda vive como atriz de classe B. Embora ela mude quando está agindo, seu personagem real é frouxo e sentimental.
+                                <br><br>
+                                Ela facilmente se apaixona, mas nunca teve um relacionamento sério devido ao seu ego forte.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/JP.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/JP.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【14M-RFT08】JP</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Esta rede será o caminho para minha salvação e sua queda.」
+                            </div>
+                            <div class="sv_text">
+                                <h3><br>【Ocupação】Hacker</h3>
+                                Ele gosta de usar o apelido porque acha que seu nome é rústico. JP tenta ficar longe do caminho certo por causa de sua natureza inflexível.
+                                <br><br>
+                                Como ele é um desistente do ensino médio, ele ganha a vida vendendo informações pessoais de hackers de todos os tipos de sites.
+                                <br><br>
+                                Ele às vezes tenta uma moda e pose esotérica, desenvolvendo seu próprio gosto pela moda.
+                                <br>
+                                Seus ossos frágeis são subprodutos de seu amor por cola.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Laura.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img_Laura" src="./allchar/Laura.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【21M-RFT49】LAURA</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Posso levar isso? Awh... Estou brincando!」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Ladra Fantasma</h3>
+                                Um ladrão notório. Os rumores dizem que não havia nada que ela não pudesse roubar e nenhum sistema de segurança que pudesse detê-la. Ela gosta de itens luxuosos de alto valor e secretamente gosta de pegar pessoas desprevenidas. A polícia lançou operações maciças para pegá-la, mas ela frustrou todas as tentativas da polícia sem nenhuma dificuldade.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Lenox.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img_Lenox" src="./allchar/Lenox.png" alt="yuki">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【17M-RFT32】LENOX</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Você não gosta de pescar? Acalma sua mente.」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Pescadora</h3>
+                                Ela está sempre vestida até os nove. É óbvio que ela costumava ser profissional de algum trabalho impuro.
+                                <br><br>
+                                Aposto que ela acredita que está ficando discreta, pensando que uma vara de pescar é um disfarce bom o suficiente.
+                                <br><br>
+                                Uma aura de culpa e ansiedade é palpável em seu discurso e gesto.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Leon.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Leon.png" alt="yuki">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【15M-RFT17】LEON</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Fraqueza é um pecado, pago com sua vida.」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Nadador</h3>
+                                Seu pai é um soldado altamente condecorado e, como atleta, ele sempre esteve sob pressão de si e de outros para se sustentar.
+                                <br><br>
+                                Ele foi ensinado a não mostrar sua fraqueza desde pequeno. Seus desejos reprimidos foram expressos através de sua obsessão material, especialmente com objetos detalhados e bonitos.
+                                <br><br>
+                                Leon está expressando esse desejo silenciosamente usando roupas íntimas fofas ou enchendo sua galeria com fotos fofas.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/LiDailin.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Li Dailin.png" alt="yuki">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【16M-RFT20】LI DAILIN</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Você poderia ficar fora da minha vida?」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Sem-teto</h3>
+                                Ela era a única filha de uma família de artes marciais. Sua família escolheu seguir o caminho do domínio sobre cuidar dela. Por isso, ela abrigava sentimentos negativos em relação às artes marciais.
+                                <br><br>
+                                Como um ato de vingança, ela se livrou do estúdio de artes marciais e os segredos passaram por gerações, e ela mesma escolheu viver a vida abandonando seu orgulho como artista marcial.
+                                <br><br>
+                                Quando ela fica sem dinheiro para comprar álcool, ela procura um emprego. Ela era conhecida como 'Mendigo Li' em sua cidade natal.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Luke.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Luke.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【18M-RFT36】<br>LUKE</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Seja uma casa bagunçada, lixo ou um tolo inconveniente, não deixamos nada para trás!」
+                            </div>
+                            <div class="sv_text">
+                                <h3><br>【Ocupação】Zelador</h3>
+                                Alegando ser um zelador veterano por oito anos, ele é bastante conhecido entre os bairros por sua proficiência em limpar e lidar com solicitações de outras pessoas com um sorriso.
+                                <br><br>
+                                Ele trabalha como assassino e recebe pedidos para “ limpar ” à noite. Seu trabalho diário é apenas um disfarce. Até agora, ele nunca falhou em um único pedido.
+                                <br><br>
+                                Seu pai morreu antes de ele nascer, e sua mãe morreu durante a prisão quando ele tinha 8 anos. Ele então cresceu em uma instalação e foi criado por seu pai adotivo, onde aprendeu assassinato. Ele é especialista em espadas curtas e atiradores.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Magnus.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Magnus.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【15M-RFT18】MAGNUS</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Magnus Scott, o motociclista lendário ... sou eu.」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Gangue de motociclistas</h3>
+                                O líder da famosa gangue de motociclistas dos EUA LATHAM. Mesmo antes de se tornar o líder, o grupo era bem conhecido. Portanto, outros motociclistas constantemente os intimidavam onde quer que fossem, resultando em intermináveis brigas de gangues.
+                                <br><br>
+                                Magnus sempre venceu a luta, não importa o número contra o qual ele era. Foi assim que ele se tornou a lenda viva entre os bandidos de motocicletas e o líder de LATHAM. Ele está muito orgulhoso de seu poder absoluto.
+                                <br><br>
+                                Devido à sua formação em gângster, ele é talentoso em agravar os outros. Suas palavras favoritas são: "Poder!" e "Persistência!"
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Mai.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Mai.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【15M-RFT18】MAI</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Eu não quero fazer isso.」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Designer de moda.</h3>
+                                O designer e CEO da David, uma marca de moda amplamente amada. Ela é um gênio quando se trata de moda, mas também é bastante egoísta.
+                                <br><br>
+                                Ela odeia as coisas facilmente. Ela não tem escrúpulos em ignorar compromissos só porque sente vontade. Os que a rodeiam esperam que ela continue assim, mas quando Mai está no trabalho, ela busca a excelência.
+                                <br><br>
+                                Sua secretária tem sido parte integrante do lançamento de Mai e sua marca David em destaque.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Nadine.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Nadine.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【14M-RFT10】NADINE</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Com um arco na mão, não sentirei falta.」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Arqueira.</h3>
+                                Ela perdeu os pais quando tinha 4 anos por causa de um deslizamento de terra após uma forte chuva. Ela foi a única sobrevivente do acidente e resgatada por animais selvagens a serem criados por eles. Ela foi declarada morta por 8 anos, mas mais tarde foi encontrada por um caçador e poderia começar uma nova vida como humana. No entanto, ela ainda não descobriu como viver como uma pessoa normal. Ela está sempre hesitando no que uma pessoa normal faria, mesmo nas tarefas mais triviais.
+                                <br><br>
+                                Ela é claustrofóbica por causa de sua memória de quando foi enterrada na terra.
+                                <br>
+                                Ela analisa a paralisia, mas coloca uma atitude cínica para escondê-la.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Nathapon.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img"  src="./allchar/Nathapon.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【17M-RFT30】NATHAPON</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Todo mundo está em uma jornada para encontrar algo, não é?」
+                            </div>
+                            <div class="sv_text">
+                                <h3><br>【Ocupação】fotógrafo</h3>
+                                Ele é um fotógrafo que viaja por todo o mundo. Seu obturador nunca para.
+                                 Ele é uma pessoa naturalmente otimista e adaptável, embora outros possam soar um pouco estranhos, mas ele não é muito sociável.
+                                 <br><br>
+                                 Sempre que ele se levanta e abre os olhos, ele se levanta e verifica cuidadosamente as fotos na câmera, com medo de perder alguma coisa.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Nicky.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Nicky.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【14M-RFT10】NICKY</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Não me incomode! ...Ha ... tudo bem, o que houve?」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】dublê.</h3>
+                                Uma dublê que tem imensa força, apesar de seu pequeno físico.
+                                <br><br>
+                                Ela parece bastante adorável, mas fica furiosa quando os outros a chamam de fofa. Ela tende a agir com força, mesmo quando envergonhada, mas sua expressão facial revela tudo.
+                                <br><br>
+                                Ela pode ter maneirismos ásperos, no entanto, ela se importa com aqueles que precisam de ajuda.
+                                <br>
+                                Ela é ótima em reconhecer o rosto das pessoas, mas devido à sua falta de capacidade de memorizar o nome de uma pessoa, isso a levou a vários encontros embaraçosos.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Rio.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Rio.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【14M-RFT10】RIO</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Você não pode mentir para a minha flecha.」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Estudante do ensino médio</h3>
+                                Ela é uma estudante do ensino médio e membro do clube Kyudo de sua escola. Ela sempre fica com uma postura reta e reta quando olha para o alvo.
+                                <br><br>
+                                Parece que as pessoas têm dificuldade em se aproximar e fazer amizade com ela devido à sua aparência fria, atitude composta e maneira direta e franca de falar. Mas, na realidade, ela é apenas uma estudante normal do ensino médio que não está familiarizada com ser social, adora coisas fofas e fica animada quando fala sobre seu campo de interesse favorito.
+                                <br><br>
+                                De repente, ela desapareceu quando se preparava para sua competição de Kyudo durante o último ano do ensino médio.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Rosalio.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Rosalio.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【14M-RFT06】ROSALIO</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Vou tirar esse olhar presunçoso do seu rosto.」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Jogador de beisebol</h3>
+                                Rosalio era jogador de beisebol em uma liga menor há três anos. Ele estava em relacionamento com a ex-namorada de seu irmão mais velho, Brit. Através da manipulação de resultados, ele ganhou muito dinheiro, mas foi pego e expulso.
+                                <br><br>
+                                Ele culpa seu irmão pela expulsão e até pela queda em sua vida.
+                                <br><br>
+                                Ele gosta de animais de estimação, mas não os alimenta bem. Eventualmente, seus animais de estimação ficaram fortes como animais selvagens.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Rozzi.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Rozzi.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【18M-RFT37】ROZZI</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Você fez bem.」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Mercenária</h3>
+                                Desde jovem, ela foi treinada como mercenária por um grupo militante.
+                                <br>
+                                Ela agora faz parte de uma organização mercenária chamada Corda D'arco ( Bowstring ), líder de equipe que se dedica a operações de inteligência nacional ou atende a solicitações exclusivas de empresas multinacionais. Em particular, ela tem uma reputação de excelentes habilidades de comando e tem as habilidades necessárias para criar estratégias calmas das melhores táticas em situações inesperadas.
+                                <br>
+                                Suas expressões faciais frias e personalidade a tornam inacessível, e ela não favorece o relacionamento próximo com ninguém, pois não há equipes permanentes durante as operações.
+                                <br>
+                                De fato, há um boato de que ela está procurando informações sobre seu colega de sua antiga organização
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Shoichi.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img_Soichi"  src="./allchar/Shoichi.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【16M-RFT23】SHOICHI</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Então, quanto vale esse trabalho sujo?」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Vendedor de títulos</h3>
+                                Ele costumava ser um trabalhador de escritório medíocre, incompetente e honesto.
+                                 Quando sua esposa morreu de um defeito cardíaco congênito, todo o seu ser mudou.
+                                 Como a falta de dinheiro impedia sua esposa de receber cirurgia e tratamento adequados, ele culpou o dinheiro pela morte de sua esposa.
+                                 E ele percebeu que um dia, a filha que herdou a doença de sua esposa morreria da mesma doença.
+                                 <br><br>
+                                 Deixe-o determinado a fazer qualquer coisa suja por dinheiro.
+                                 Ele pode falar sobre isso com uma cara impassível, e o que realmente existe determina seu próprio valor.
+                                 Ele prefere chá a café, mas acha que chá é antiquado.
+
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Silvia.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Silvia.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【16M-RFT19】SILVIA</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Whoa, isso parece divertido!」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Pilota</h3>
+                                Ela foi criada por seu avô, na ausência de pais. Sua mãe é uma fotógrafa errante e não se sabe nada sobre o pai. Ela não valoriza muito na formação de um relacionamento. Seu foco é viver no agora.
+                                <br><br>
+                                Um dos maiores motivos para ela se tornar uma motociclista, foi devido à sua emoção instantânea e sensação de corrida.
+                                <br><br>
+                                Ela é facilmente animada e age emocionalmente sem se importar com as consequências.
+                                <br><br>
+                                Ela era famosa por andar sem dar uma piada sobre as consequências.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Sissela.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Sissela.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【17M-RFT27】SISSELA</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Viver é uma dor. Há apenas mais dor esperando por mim」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】doente terminal</h3>
+                                Ela sofre de uma doença incurável da qual apenas cem pessoas no mundo sofrem. Diagnosticado em uma idade jovem e não deixou o hospital desde então.
+                                 Muitas vezes ela suportou dores insuportáveis ​​e, apesar de várias tentativas de suicídio, nunca teve sucesso.
+                                 A comunidade médica a considera uma amostra rara e importante, então muitas tecnologias médicas de ponta e enormes subsídios de medicamentos são usados ​​para estudar sua condição.
+                                 <br><br>
+                                 Mas aos olhos dela, eles só a deixaram viver aqui para usar seu corpo para pesquisa.
+                                 Ela está sempre inexpressiva e não gosta de falar. Por morar em hospital desde criança, me sinto muito desconfortável em falar com outras pessoas.
+                                 Ela tem o hábito de desenhar olhos e bocas nos objetos ao seu redor, dando-lhes nomes e conversando com eles.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Sua.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Sua.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【17M-RFT33】SUA</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Vou ler um conto de fadas para você.」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Bibliotecária</h3>
+                                Uma bibliotecária em uma biblioteca municipal que dificilmente deixaria sua mesa. Ela preencheria o turno dos outros, mesmo antes de alguém perguntar.
+                                <br><br>
+                                Sua sempre fala como se ainda estivesse sonhando. Ela é uma otimista gentil e gentil de coração que nunca quebra um sorriso. Apesar de sua aparência comum, Sua é notavelmente talentosa.
+                                <br><br>
+                                Sua memória, quando se trata de literaturas e narrativas, é quase perfeita, até letras únicas e contagem de páginas. Ela usou esse presente para classificar livros com velocidade e precisão. Sua está sempre lendo alguma coisa, mesmo em dias de folga.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Tia.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Tia.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【21M - RFT51】TIA</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Existe ... alguma coisa que você gostaria que eu desenhasse?」
+                            </div>
+                            <div class="sv_text">
+                                <h3><br>【Ocupação】Estudante universitário de arte</h3>
+                                Ela é uma artista brilhante e genial, mas facilmente fica assustada e intimidada por pequenos assuntos.
+                                <br><br>
+                                Ela tem a capacidade de sentir emoções das cores e é capaz de transmitir aos outros através de suas pinturas. Ela é muito hábil em desenhar pinturas de natureza morta e, de alguma forma, suas pinturas parecem ser trazidas à vida literalmente.
+                                <br><br>
+                                Ela foi relatada como desaparecida quando estava pintando para crianças, e muitos assumiram que ela fugiu devido ao controle rigoroso de sua família.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/William.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/William.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【14M-RFT05】WILLIAM</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Eu não vou mais jogar bem.」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Arremessador</h3>
+                                Ele era o arremessador de alto nível da Major League Baseball.
+                                <br>
+                                Ele estava oficialmente em um relacionamento com Brit, filha do dono da equipe, mas o relacionamento deles era frágil devido ao seu amplo relacionamento amoroso. Sua imagem foi severamente danificada quando Brit começou a namorar Rosalio logo depois que ela terminou com William.
+                                <br><br>
+                                Ele foi expulso da Major League devido à suposta manipulação de resultados. E ninguém sabia sobre o paradeiro dele por três anos.
+                                <br><br>    
+                                Ele gosta de plantas, mas não as rega regularmente.
+                                <br>
+                                Ele é um tipo de pessoa que não faz nada que não possa assumir a responsabilidade.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/XiuKai.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/XiuKai.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【14M-RFT09】XIUKAI</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Pare de olhar, ou eu vou encher esse bolinho de massa com você.」
+                            </div>
+                            <div class="sv_text">
+                                <h3><br>【Ocupação】Cozinheiro</h3>
+                                Um cozinheiro chinês dirigindo seu próprio restaurante em Daegu, Coréia do Sul. Ele costumava ser cozinheiro de um mestre, que era um dos associados mais próximos do presidente da China. Suas conexões e riqueza eram inigualáveis. Mas depois que seu mestre foi expurgado da noite para o dia, ele escapou para a Coréia do Sul.
+                                <br><br>
+                                Ele costumava ser magro e tinha postura elegante, ele afirma... Ele é bom em se controlar, aprendeu com a experiência de servir seus ex-mestres.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Yuki.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Yuki.png" alt="yuki">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【17M-RFT31】YUKI</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Há algo que eu possa fazer por você?」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Estudante do ensino médio</h3>
+                                Um estudante do ensino médio do clube Kendo com um comportamento impecável.
+                                 Ele nunca perde a calma com as pequenas coisas e está sempre pronto para lidar com qualquer situação.
+                                 Seu perfeccionismo é como uma parede de gelo impenetrável, mas ao mesmo tempo tão fácil de quebrar quanto vidro.
+                            </div>
+                        </div>
+                        <div class="sv_button head_img"><img src="./char/Zahir.png" alt="">
+                        </div>
+                        <div class="sv_intro">
+                            <div class="body_img">
+                                <img class="char_img" src="./allchar/Zahir.png" alt="">
+                            </div>
+                            <div class="sv_title">
+                                <h1>【14M-RFT03】ZAHIR</h1>
+                            </div>
+                            <div class="sv_say">
+                                「Eu contemplo a visão do Todo-Poderoso.」
+                            </div>
+                            <div class="sv_text">
+                                <h3>【Ocupação】Seguidor religioso</h3>
+                                Ele estava morrendo de fome e sede depois de escapar de um orfanato quando jovem. Milagrosamente, ele chegou a um pequeno templo sikh e poderia sobreviver.
+                                <br><br>
+                                Desde então, ele se tornou um seguidor fiel, pois acreditava que Waheguru o salvou.
+                                <br><br>
+                                Ele lava o corpo todas as manhãs e escova o cabelo com um pente de madeira. Ele tende a falar como um adolescente ilusório, mas não é facilmente percebido como ele raramente fala.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <img src="./other/Goodjob_Rozzi.png" style="width: 9rem; height: 9rem; margin-left: 45%; margin-bottom: 2%;">
+    <p style="color: lightgray; text-align: center; height: 7%;">Tributo feito com carinho por @TainaIsabela</p>
+    <p></p>
+
+
+</body>
+</html>
+
